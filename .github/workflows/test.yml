@@ -1,5 +1,4 @@
 name: testci
-
 on:
   push:
     branches: [ "master" ]
@@ -8,7 +7,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
