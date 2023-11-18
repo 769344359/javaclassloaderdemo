@@ -4,6 +4,13 @@
 ## demo 目的
 验证不同classloader `对象`（object级别， 而不是class 级别）,获取的class是不一样的
 
+也就是
+```
+var l1 = new CustomClassLoader() ;
+var l2 = new CustomClassLoader() ;  
+```
+这两个classloader 就算加载同一个class文件（完全限定名一样），也会返回不同`class`对象
+
 
 [相关阅读](https://docs.oracle.com/javase/specs/jls/se8/jls8.pdf)
 ```
